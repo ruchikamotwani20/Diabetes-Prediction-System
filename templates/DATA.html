@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DATA</title>
+     <style>
+        body{
+        background-image:url("{% static 'DiabetesPrediction/images/dr.jpg'%}");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-attachment:fixed;
+        }
+        .dataframe tbody tr td{
+        color:white;
+        text-align:center;
+        }
+        .dataframe th{
+        color:white;
+        text-align:center;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--<p>HELLO WELCOME TO DATA PAGE</p>-->
+<!--<form action="set">-->
+<!--    DATA SET OF DIABETES PREDICTION SYSTEM IS :-->
+
+<!--</form>-->
+<h1 style="color:red;font-size:44px;font-family:arial;">DATASET</h1>
+{{htmldata | safe}}
+
+
+<!--<h1 style="color:white;font-size:65px;">DATASET ANALYSIS OF<br> DIABETES PREDICTION SYSTEM</h1>-->
+<!--<h2  style="color:white;font-size:40px;">HEAT MAP</h2>-->
+
+<!--<img src="DiabetesPrediction/images/heatmap.png">-->
+
+<script>console.log("hi",{{htmldata}})</script>
+</body>
+</html>
